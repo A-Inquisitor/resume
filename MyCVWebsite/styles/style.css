@@ -1,0 +1,415 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F0F4EF;
+  color: #344966;
+}
+
+h1, h2, h3, h4 {
+  color: #344966;
+}
+
+a {
+  text-decoration: none;
+  color: #344966;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #B4CDED;
+}
+
+/* Layout and Sidebar */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #B4CDED;
+  color: #344966;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .profile-container {
+  margin-bottom: 20px;
+}
+
+.sidebar .sidebar-profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #344966;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #B4CDED;
+  color: #344966;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar ul li a.active {
+  background-color: #344966;
+  color: #F0F4EF;
+}
+
+.sidebar ul li a:hover {
+  background-color: #344966;
+  color: #F0F4EF;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.page {
+  display: none;
+}
+
+.page:not(.hidden) {
+  display: block;
+}
+
+/* Section Titles */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+/* Experience Infographic Styling */
+.experience-infographic {
+  display: block;
+  margin: 0 auto;
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.experience-image {
+  width: 20%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Timeline Styling */
+.timeline {
+  position: relative;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #344966;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 20px 0 40px 100px;
+  padding: 15px;
+  background: #B4CDED;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -54px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background: #344966;
+  border-radius: 50%;
+  border: 3px solid #F0F4EF;
+}
+
+/* About Me Section Styling */
+
+/* Grid layout for the About Me section */
+.about-me-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+/* Common styling for all About Me cards */
+.about-me-card {
+  background: linear-gradient(135deg, #ffffff, #f3f9ff);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.about-me-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.about-me-image {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Professional Summary Card (Top Right) */
+.about-me-summary-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* CV Card (Bottom Left) */
+.about-me-cv-card h2 {
+  margin-top: 0;
+}
+
+.cv-images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.cv-image {
+  flex: 1;
+  max-width: 48%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.cv-download-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cv-download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Contact Card (Bottom Right) - Rectangular Style */
+.about-me-contact-card {
+  border-radius: 0; /* Keep it rectangular */
+}
+
+.about-me-contact-card h2 {
+  margin-top: 0;
+}
+
+.about-me-contact-card p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+
+/* Hobbies Section Styling */
+.hobbies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.hobby {
+  background-color: #B4CDED;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hobby-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.hobby h3 {
+  font-size: 20px;
+  color: #344966;
+  margin-bottom: 10px;
+}
+
+.hobby ul {
+  padding-left: 20px;
+  list-style: disc;
+  font-size: 16px;
+  color: #344966;
+}
+
+.hobby ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Accordion Styling */
+.accordion-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion {
+  margin-bottom: 20px;
+}
+
+.accordion-header {
+  width: 100%;
+  background-color: #344966;
+  color: #F0F4EF;
+  padding: 30px;
+  font-size: 20px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin-bottom: 5px;
+}
+
+.accordion-header:hover {
+  background-color: #3f5b9d;
+  transform: scale(1.02);
+}
+
+.accordion-content {
+  background-color: #e0e7f1;
+  display: none;
+  padding: 40px;
+  font-size: 18px;
+  color: #344966;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Image Scaling for Projects & Certifications */
+.accordion-image {
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 15px;
+  border-radius: 8px;
+  display: block;
+}
+
+.property-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+  justify-items: center;
+}
+
+.property-image {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.retailer-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+  justify-items: center;
+}
+
+.retailer-image {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.certifications-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+  justify-items: center;
+}
+
+.certification-image {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.summary-list li {
+  margin-bottom: 10px; /* or however much space you want */
+  list-style-position: outside; /* optional, ensures bullet is outside the text */
+}

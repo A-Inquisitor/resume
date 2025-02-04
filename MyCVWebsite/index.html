@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive CV Website</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="profile-container">
+        <img src="images/high_quality_me.jpeg" alt="Profile Picture" class="sidebar-profile-pic">
+      </div>
+      <ul>
+        <li><a href="#about-me" class="nav-link active">About Me</a></li>
+        <li><a href="#experience" class="nav-link">My Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects &amp; Certifications</a></li>
+        <li><a href="#interests" class="nav-link">Interests &amp; Hobbies</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- About Me Section: Quadrant Layout -->
+      <section id="about-me" class="page">
+        <h1>About Me</h1>
+        <div class="about-me-grid">
+          <!-- Top Left: Image Card -->
+          <div class="about-me-image-card about-me-card">
+            <img src="images/high_quality_me.jpeg" alt="High Quality Picture of Me" class="about-me-image">
+          </div>
+          <!-- Top Right: Professional Summary Card (Switched with CV Card) -->
+          <div class="about-me-summary-card about-me-card">
+            <h2>Professional Summary</h2>
+            <ul class="summary-list">
+              <li><strong>Analytical and Detail Oriented:</strong> Skilled at transforming complex datasets into clear, actionable insights.</li>
+              <li><strong>Technical Proficiency:</strong> Expertise in Python, SQL, Power BI, and advanced Excel for data cleaning, modeling, and visualization.</li>
+              <li><strong>Industry Experience:</strong> Gained hands on experience at Aurorian Records ensuring data accuracy and communicating findings effectively to creative teams and stakeholders.</li>
+              <li><strong>Advanced DAX Measures:</strong> Proficient in building interactive dashboards and applying advanced DAX to uncover meaningful trends.</li>
+              <li><strong>Discrepancy Detection & Communication:</strong> Strong track record of identifying data discrepancies and translating technical details into practical, accessible information.</li>
+            </ul>
+          </div>
+          
+          <!-- Bottom Left: CV Card (Switched with Professional Summary) -->
+          <div class="about-me-cv-card about-me-card">
+            <h2>My CV</h2>
+            <div class="cv-images">
+              <img src="images/Leo_perkola_cv_image_1.jpg" alt="CV Page 1" class="cv-image">
+              <img src="images/Leo_perkola_cv_image_2.jpg" alt="CV Page 2" class="cv-image">
+            </div>
+            <a href="files/Leo_Perk_CV.pdf" download class="cv-download-btn">Download my CV in high definition!</a>
+          </div>
+          <!-- Bottom Right: Contact Card -->
+          <div class="about-me-contact-card about-me-card">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong><br><a href="mailto:leo.perkola@hotmail.com">leo.perkola@hotmail.com</a></p>
+            <p><strong>LinkedIn:</strong><br><a href="https://www.linkedin.com/in/leo-p-86494519a/" target="_blank">My Linkedin</a></p>
+            <p><strong>Phone:</strong><br>07903422530</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section (unchanged) -->
+      <section id="experience" class="page hidden">
+        <h1>My Experience</h1>
+        <img src="images/Experience_infographic.png" alt="Experience Infographic" class="experience-infographic">
+      </section>
+
+      <!-- Projects & Certifications Section (unchanged) -->
+      <section id="projects" class="page hidden">
+        <h1>Projects &amp; Certifications</h1>
+        <div class="accordion-container">
+          <!-- 1. Datacamp Certifications -->
+          <div class="accordion">
+            <button class="accordion-header">Datacamp Certifications</button>
+            <div class="accordion-content">
+              <p>
+                Completed comprehensive Datacamp courses to master <strong>SQL</strong>, <strong>PowerBI</strong>, and <strong>MLOps</strong>—enhancing my technical expertise and data‐driven decision making.
+              </p>
+              <div class="certifications-images">
+                <img src="images/MLOPS_concepts.JPG" alt="MLOps Concepts" class="certification-image">
+                <img src="images/introduction_to_dax_power_bi.JPG" alt="Introduction to DAX in Power BI" class="certification-image">
+                <img src="images/introduction_to_sql.JPG" alt="Introduction to SQL" class="certification-image">
+                <img src="images/introduction_to_power_bi.JPG" alt="Introduction to Power BI" class="certification-image">
+                <img src="images/intermediate_sql.JPG" alt="Intermediate SQL" class="certification-image">
+                <img src="images/data_modeling_in_power_bi.JPG" alt="Data Modeling in Power BI" class="certification-image">
+                <img src="images/data_visualisation_in_power_bi.JPG" alt="Data Visualisation in Power BI" class="certification-image">
+                <img src="images/data_transformation_in_power_bi.JPG" alt="Data Transformation in Power BI" class="certification-image">
+                <img src="images/Data_preparation_in_power_bi.JPG" alt="Data Preparation in Power BI" class="certification-image">
+                <img src="images/Deploying and Maintaining Assets in Power.jpeg" alt="Deploying and Maintaining Assets in Power BI" class="certification-image">
+              </div>
+            </div>
+          </div>
+          <!-- 2. Property Revenue Analysis -->
+          <div class="accordion">
+            <button class="accordion-header">Property Revenue Analysis</button>
+            <div class="accordion-content">
+              <p>Visualised KPIs for property management using Power BI dashboards.</p>
+              <div class="property-images">
+                <img src="images/property_revenue_analysis_1.jpg" alt="Property Revenue Analysis 1" class="property-image">
+                <img src="images/property_revenue_analysis_2.jpg" alt="Property Revenue Analysis 2" class="property-image">
+                <img src="images/property_revenue_analysis_3.jpg" alt="Property Revenue Analysis 3" class="property-image">
+                <img src="images/property_revenue_analysis_4.jpg" alt="Property Revenue Analysis 4" class="property-image">
+                <img src="images/property_revenue_analysis_5.jpg" alt="Property Revenue Analysis 5" class="property-image">
+                <img src="images/property_revenue_analysis_6.jpg" alt="Property Revenue Analysis 6" class="property-image">
+              </div>
+            </div>
+          </div>
+          <!-- 3. Machine Learning Drone Delivery -->
+          <div class="accordion">
+            <button class="accordion-header">
+              Machine Learning Drone Delivery - Deep Learning using Object Recognition
+            </button>
+            <div class="accordion-content">
+              <p>
+                Developed a deep learning neural network model for drone delivery, leveraging object recognition techniques to enhance logistics efficiency.
+              </p>
+              <img src="images/Drone_machine_learning.jpg" alt="Machine Learning Drone Delivery" class="accordion-image">
+            </div>
+          </div>
+          <!-- 4. Retailer Power BI Report -->
+          <div class="accordion">
+            <button class="accordion-header">Retailer Power BI Report</button>
+            <div class="accordion-content">
+              <p>Developed dashboards using Power BI and SQL, processing 120,000+ rows of data.</p>
+              <div class="retailer-images">
+                <img src="images/Retailer_powerbi.jpg" alt="Retailer Power BI Report 1" class="retailer-image">
+                <img src="images/Retailer_powerbi_2.jpg" alt="Retailer Power BI Report 2" class="retailer-image">
+                <img src="images/Retailer_powerbi_3.jpg" alt="Retailer Power BI Report 3" class="retailer-image">
+                <img src="images/Retailer_powerbi_4.jpg" alt="Retailer Power BI Report 4" class="retailer-image">
+              </div>
+            </div>
+          </div>
+          <!-- 5. HR Data Analysis -->
+          <div class="accordion">
+            <button class="accordion-header">HR Data Analysis</button>
+            <div class="accordion-content">
+              <p>
+                My first Power BI project—testing the use of qualitative data to expand my problem solving and approach to complex challenges.
+              </p>
+              <img src="images/HR_dashboard.jpg" alt="HR Data Analysis Dashboard" class="accordion-image">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Interests & Hobbies Section (unchanged) -->
+      <section id="interests" class="page hidden">
+        <h1>Interests &amp; Hobbies</h1>
+        <div class="hobbies-container">
+          <div class="hobby">
+            <h3>Volleyball</h3>
+            <img src="images/volleyball.jpg" alt="Volleyball" class="hobby-image">
+            <ul>
+              <li>Led my team to <strong>first place</strong> in the league during my debut season.</li>
+              <li>Made an abundance of <strong>memorable moments</strong>.</li>
+              <li>Demonstrated strong leadership by building rapport with new teammates.</li>
+              <li>Strategised under pressure to achieve collective goals.</li>
+            </ul>
+          </div>
+          <div class="hobby">
+            <h3>Chess</h3>
+            <img src="images/chess.png" alt="Chess" class="hobby-image">
+            <ul>
+              <li>Ranked in the <strong>Top 1.3%</strong> of chess players on chess.com.</li>
+              <li>Achieved an online rapid chess rating of 1705.</li>
+              <li>Honed <strong>strategic thinking, problem-solving,</strong> and <strong>decision-making skills</strong>.</li>
+              <li>Applied analytical skills to tackle complex scenarios.</li>
+            </ul>
+          </div>
+          <div class="hobby">
+            <h3>Languages</h3>
+            <img src="images/languages.jpg" alt="Languages" class="hobby-image">
+            <ul>
+              <li>Ranked in the <strong>Top 2%</strong> of learners on Duolingo in 2024.</li>
+              <li>Fluent in <strong>English</strong> and <strong>Albanian</strong>, with proficiency in <strong>Portuguese</strong> and <strong>Korean</strong>.</li>
+              <li>Enhanced communication across diverse, multicultural teams.</li>
+            </ul>
+          </div>
+          <div class="hobby">
+            <h3>Currently Reading</h3>
+            <img src="images/currently-reading.jpg" alt="Currently Reading" class="hobby-image">
+            <ul>
+              <li>Currently reading <em>The Brothers Karamazov</em> by Fyodor Dostoevsky.</li>
+              <li>Exploring philosophical and psychological themes through literature.</li>
+              <li>Using reading to stay inspired and <strong>expand perspectives for problem-solving</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
